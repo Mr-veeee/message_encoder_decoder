@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Message Encode and Decode</title>
+</head>
+<body>
+    <h1>Message Encode and Decode</h1>
+
+    <form action="/" method="POST">
+        <input type="text" name="message" placeholder="Message">
+        <input type="text" name="key" placeholder="Key">
+        <select name="mode">
+            <option value="e">Encode</option>
+            <option value="d">Decode</option>
+        </select>
+        <input type="submit" value="Submit">
+    </form>
+
+    <h2>Result</h2>
+    <input type="text" value="{{ result }}">
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
